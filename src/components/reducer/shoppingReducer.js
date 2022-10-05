@@ -16,7 +16,8 @@ const agregarProducto = async (id, nombre, img, precio, quantity) => {
 };
 
 const modificarCantidad = async (id, nombre, img, precio, quantity) => {
-  await axios.put(`https://servidor-dino2022.herokuapp.com/${id}`, {
+  await axios.put(`https://servidor-dino2022.herokuapp.com/carrito/${id}`, {
+
     id: id,
     nombre: nombre,
     img: img,
