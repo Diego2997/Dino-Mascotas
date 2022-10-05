@@ -6,7 +6,7 @@ export const initialState = {
 };
 
 const agregarProducto = async (id, nombre, img, precio, quantity) => {
-  await axios.post("http://localhost:5000/carrito", {
+  await axios.post("https://servidor-dino2022.herokuapp.com/carrito", {
     id: id,
     nombre: nombre,
     img: img,
@@ -16,7 +16,7 @@ const agregarProducto = async (id, nombre, img, precio, quantity) => {
 };
 
 const modificarCantidad = async (id, nombre, img, precio, quantity) => {
-  await axios.put(`http://localhost:5000/carrito/${id}`, {
+  await axios.put(`https://servidor-dino2022.herokuapp.com/${id}`, {
     id: id,
     nombre: nombre,
     img: img,
@@ -26,7 +26,7 @@ const modificarCantidad = async (id, nombre, img, precio, quantity) => {
 };
 
 const eliminarProducto = async (id) => {
-  await axios.delete(`http://localhost:5000/carrito/${id}`);
+  await axios.delete(`https://servidor-dino2022.herokuapp.com/${id}`);
 };
 
 export function shoppingReducer(state, action) {
