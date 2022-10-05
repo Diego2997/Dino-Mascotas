@@ -13,7 +13,7 @@ const Products = (props) => {
   const obtenerDatos = async () => {
     setIsLoading(true);
     try {
-      const datos = await axios.get(`http://localhost:5000/${props.direccion}`);
+      const datos = await axios.get(`https://servidor-dino2022.herokuapp.com/${props.direccion}`);
       const comidas = await datos.data;
       setPost(comidas);
     } catch (error) {
