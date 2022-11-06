@@ -6,7 +6,7 @@ export const initialState = {
 };
 
 const agregarProducto = async (id, nombre, img, precio, quantity) => {
-  await axios.post("https://servidor-dino2022.herokuapp.com/carrito", {
+  await axios.post("https://tired-teal-flip-flops.cyclic.app/carrito", {
     id: id,
     nombre: nombre,
     img: img,
@@ -16,8 +16,7 @@ const agregarProducto = async (id, nombre, img, precio, quantity) => {
 };
 
 const modificarCantidad = async (id, nombre, img, precio, quantity) => {
-  await axios.put(`https://servidor-dino2022.herokuapp.com/carrito/${id}`, {
-
+  await axios.put(`https://tired-teal-flip-flops.cyclic.app/carrito/${id}`, {
     id: id,
     nombre: nombre,
     img: img,
@@ -27,7 +26,7 @@ const modificarCantidad = async (id, nombre, img, precio, quantity) => {
 };
 
 const eliminarProducto = async (id) => {
-  await axios.delete(`https://servidor-dino2022.herokuapp.com/${id}`);
+  await axios.delete(`https://tired-teal-flip-flops.cyclic.app/${id}`);
 };
 
 export function shoppingReducer(state, action) {
