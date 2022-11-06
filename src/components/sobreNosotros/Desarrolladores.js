@@ -21,7 +21,7 @@ export const Desarrolladores = [
     id: 2,
     foto: diego,
     nombre: "Diego Mercado",
-    linkedin: "https://www.linkedin.com/in/diego-mercado-pc",
+    linkedin: "https://www.linkedin.com/in/fdmercado",
     github: "https://github.com/Diego2997",
   },
   {
