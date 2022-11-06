@@ -12,11 +12,17 @@ const SearchBar = () => {
 
   const obtenerDatos = async () => {
     try {
-      const datosCan = await axios.get(`https://servidor-dino2022.herokuapp.com/Caninos`);
+      const datosCan = await axios.get(
+        `https://tired-teal-flip-flops.cyclic.app/Caninos`
+      );
       const infoCan = await datosCan.data;
-      const datosFel = await axios.get(`https://servidor-dino2022.herokuapp.com/Felinos`);
+      const datosFel = await axios.get(
+        `https://tired-teal-flip-flops.cyclic.app/Felinos`
+      );
       const infoFel = await datosFel.data;
-      const datosAcc = await axios.get(`https://servidor-dino2022.herokuapp.com/Accesorios`);
+      const datosAcc = await axios.get(
+        `https://tired-teal-flip-flops.cyclic.app/Accesorios`
+      );
       const infoAcc = await datosAcc.data;
       setProductos(infoCan.concat(infoFel).concat(infoAcc));
     } catch (error) {

@@ -9,7 +9,7 @@ const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(shoppingReducer, initialState);
 
   const updateState = async () => {
-    const carritoUrl = "http://localhost:5000/Carrito";
+    const carritoUrl = "https://tired-teal-flip-flops.cyclic.app/Carrito";
     const resCarrito = await axios.get(carritoUrl);
     const carritoListItems = await resCarrito.data;
 
