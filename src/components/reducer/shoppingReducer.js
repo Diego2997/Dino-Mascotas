@@ -26,7 +26,7 @@ const modificarCantidad = async (id, nombre, img, precio, quantity) => {
 };
 
 const eliminarProducto = async (id) => {
-  await axios.delete(`https://tired-teal-flip-flops.cyclic.app/${id}`);
+  await axios.delete(`https://tired-teal-flip-flops.cyclic.app/carrito/${id}`);
 };
 
 export function shoppingReducer(state, action) {
